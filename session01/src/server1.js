@@ -1,7 +1,12 @@
 
 var http =  require("http");
+// tạo server
+
 var url  =  require("url");
+// tạo url  để lấy đường dẫn thông qua request
 var fs   = require ("fs");
+// đọc file
+//xoá,update,tạo,rename,
 let server = http.createServer(function (req, res) {
     let url1 = url.parse(req.url);
     let method= req.method;
