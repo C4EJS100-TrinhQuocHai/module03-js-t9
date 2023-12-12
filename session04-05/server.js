@@ -1,6 +1,10 @@
 var express= require("express");
 var app= express();
  var router= require("./api");
+ const cors= require("cors");
+ app.use(cors({
+     origin:"*"
+ }))
 // var router1=express.Router();
 // app.get("/",(req,res)=>{
 //     res.write("hello");
